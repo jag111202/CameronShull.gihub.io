@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Details - Element</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .content-wrapper-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 20px; /* Add padding at the top to avoid cut-off */
+            max-width: 1200px; /* Set max width for content */
+        }
+
+        .album-image2 {
+            max-width: 600px;
+            margin-bottom: 20px; /* Space between image and text */
+        }
+
+        .album-image2 img {
+            width: 100%;
+            display: block;
+        }
+
+        .right-content-section {
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        .album-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .album-buttons {
+            margin-top: 20px;
+        }
+
+        .album-buttons .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .additional-info {
+            margin-top: 30px; /* Space between image and text */
+            max-width: 1000px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .info-image {
+            max-width: 300px;
+        }
+
+        .info-image img {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper-2 {
+                flex-direction: column; /* Stack items on small screens */
+                text-align: center; /* Center-align text on small screens */
+            }
+
+            .album-image2 {
+                margin-bottom: 20px; /* Space between image and text on small screens */
+            }
+
+            .additional-info {
+                flex-direction: column; /* Stack text box and image on small screens */
+                align-items: center;
+            }
+
+            .info-image {
+                max-width: 100%; /* Full width for smaller screens */
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <div class="logo-image active"><a href="./"><img src="./assets/img/Logo_placeholder.png" alt="Logo"></a></div>
+            <div class="logo-image"><a href="./"><img src="./assets/img/Logo_placeholder.png" alt="Logo"></a></div>
+        </div>
+        <div class="menu-section">
+            <div class="header-items right">
+                <div class="right-items desktop-only">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#music">Music</a>
+                    <a href="#videos">Videos</a>
+                </div>
+                <div class="mobile-menu mobile-only">
+                    <img class="menu-icon active" src="./assets/img/menu.svg" alt="Menu">
+                    <img class="menu-icon" src="./assets/img/close.svg" alt="Close">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="album-details-2" class="section">
+        <div class="content-wrapper-2">
+            <div class="album-image2">
+                <img src="assets/img/Album cover_About.png" alt="Album Cover">
+            </div>
+            <div class="right-content-section">
+                <div class="right-content">
+                    <div class="album-title">Album Name</div>
+                    <div class="album-buttons">
+                        <a href="#" target="_blank" class="button">Stream Now</a>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <p>Additional information about the album can go here. You can add as much text as needed to describe the album, its tracks, production details, and more.</p>
+                    <div class="info-image">
+                        <img src="assets/img/Uni_Shed.png" alt="Additional Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright-links">
+            <span class="copyright-text link">© 2023 Cameron Shull</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

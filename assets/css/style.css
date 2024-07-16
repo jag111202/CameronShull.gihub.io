@@ -2,7 +2,7 @@
 :root {
     --color: black;
     --site-text-color: lightgrey;
-    --background-color: rgba(213, 214, 216, 0.894);
+    --background-color: rgba(216, 214, 214, 0.894);
     --hover-color: #2a9d8f;
     --button-color: black;
     --primary-font: 'Cantarell-Regular';
@@ -17,7 +17,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: normal;
     color: var(--color);
     width: 100%;
@@ -127,7 +127,7 @@ section.home {
 .album-title {
     font-size: 2.6042vw;
     line-height: 3.1771vw;
-    font-family: 'Lobster', cursive;
+    font-family: 'Times New Roman', cursive;
 }
 
 .album-desc {
@@ -865,7 +865,7 @@ div li.hide {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: 'Lobster', cursive;
+    font-family: 'Arial';
 }
 
 

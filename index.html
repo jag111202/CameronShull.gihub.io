@@ -147,7 +147,16 @@
     <section class="section about" id="about">
         <div class="section-title" style="font-family:'Lobster', cursive;">About</div>
         <hr class="horizontal" />
-       <p> Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker from California.</p>
+       <div id="container">
+  </div>
+
+<script>
+  const paragraph = document.createElement('p');
+  paragraph.textContent = 'Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker from California.';
+
+  const container = document.getElementById('container');
+  container.appendChild(paragraph);
+</script>
         <div class="content-wrapper">
             <div class="left-content-section">
                 <p class="desc-title desktop-only">Cameron Shull </p>

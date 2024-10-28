@@ -151,12 +151,36 @@
   </div>
         <div class="content-wrapper">
             <div class="left-content-section">
-                <p class="">Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker. After being self taught to create music, he chose to extend his studies by attending CSU Monterey Bay to venture off into the film industry. While he is most familiar with sound, he looks forward to learning cinematography and post production/editing. Please feel free to email him for any other questions: cshull008@gmail.com , and do not forget to connect with him on 
-                   function createLinkedInLink(profileUrl) {https://www.linkedin.com/in/cameron-shull-b4121a326            const link = document.createElement('a'); // Create an anchor element
-            link.textContent = 'LinkedIn'; // Set link text
-            link.href = profileUrl; // https://www.linkedin.com/in/cameron-shull-b4121a326
-            link.target = '_blank'; // Open link in a new tab
-            return link; // Return the anchor element
+                <p class="">Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker. After being self taught to create music, he chose to extend his studies by attending CSU Monterey Bay to venture off into the film industry. While he is most familiar with sound, he looks forward to learning cinematography and post production/editing. Please feel free to email him for any other questions: cshull008@gmail.com.
+                   <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Example</title>
+</head>
+<body>
+    <h1>Dynamic Hyperlink</h1>
+    <div id="linkContainer"></div>
+
+    <script>
+        // Function to create a hyperlink
+        function createHyperlink(text, url) {
+            const link = document.createElement('a'); // Create an anchor element
+            link.textContent = text;                  // Set the link text
+            link.href = url;                          // Set the link URL
+            link.target = '_blank';                   // Open link in a new tab
+            return link;                              // Return the anchor element
+        }
+
+        // Example usage
+        const linkContainer = document.getElementById('linkContainer');
+        const myLinkText = 'Visit OpenAI'; // Customize your link text
+        const myLinkUrl = 'https://www.openai.com'; // Customize your link URL
+        const myHyperlink = createHyperlink(myLinkText, myLinkUrl);
+        linkContainer.appendChild(myHyperlink); // Append the link to the container
+    </script>
+</body>
+</html>   
    </p>
                <p class="sub-desc"><span class="mobile-only"></span> About here</p>
             </div>

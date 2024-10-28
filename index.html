@@ -149,18 +149,33 @@
         <hr class="horizontal" />
        <div id="container">
   </div>
-function createBio(name, age, profession, hobbies, location) {
-    const bio = {
-        name: Cameron Shull,
-        age: 22,
-        profession: student at CSUMB,
-        passions: create art,
-        location: California,
-    };
+ <script>
+        function createBio(name, age, profession, hobbies, location) {
+            const bio = {
+                name: name,
+                age: age,
+                profession: profession,
+                hobbies: hobbies,
+                location: location,
+            };
 
-    return `Meet ${bio.name}, a ${bio.age}-year-old ${bio.profession} based in ${bio.location}. 
-    In their free time, they enjoy ${bio.hobbies.join(", ")}.`;
- paragraph.style.textAlign = "center";  const container = document.getElementById('container');
+            return `Meet ${bio.name}, a ${bio.age}-year-old ${bio.profession} based in ${bio.location}. In their free time, they enjoy ${bio.hobbies.join(", ")}.`;
+        }
+
+        // Customize your details here
+        const myBio = createBio(
+            "Cameron Shull",          // Name
+            22,                  // Age
+            "Student at CSUMB", // Profession
+            ["making music", "watching films", "reading"], // Hobbies
+            "California"           // Location
+        );
+
+        // Display the bio on the page
+        document.getElementById('bio').innerText = myBio;
+    </script>
+</body>
+</html> paragraph.style.textAlign = "center";  const container = document.getElementById('container');
   container.appendChild(paragraph)
    </script>
         <div class="content-wrapper">

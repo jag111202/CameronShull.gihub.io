@@ -154,12 +154,19 @@
    paragraph.textContent  = "Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker from California.";
 const paragraph = document.getElementById("myParagraph");
 paragraph.style.textAlign = "center";  const container = document.getElementById('container');
-  container.appendChild(paragraph);
+  container.appendChild(paragraph)
    </script>
         <div class="content-wrapper">
             <div class="left-content-section">
                 <p class="desc-title desktop-only">Cameron Shull </p>
-                <p class="sub-desc"><span class="mobile-only"></span> About here</p>
+               <script>
+  const paragraph = document.createElement('p');
+   paragraph.textContent  = "Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker from California.";
+const paragraph = document.getElementById("myParagraph");
+paragraph.style.textAlign = "center";  const container = document.getElementById('container');
+  container.appendChild(paragraph)
+   </script>
+               <p class="sub-desc"><span class="mobile-only"></span> About here</p>
             </div>
             <div class="right-content-section">
                 <div class="right-content-wrapper">

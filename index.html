@@ -149,11 +149,18 @@
         <hr class="horizontal" />
        <div id="container">
   </div>
-<script>
-  const paragraph = document.createElement('p');
-   paragraph.textContent  = "Cameron Shull is a rapper, producer, audio engineer, and aspiring filmmaker from California.";
-const paragraph = document.getElementById("myParagraph");
-paragraph.style.textAlign = "center";  const container = document.getElementById('container');
+function createBio(name, age, profession, hobbies, location) {
+    const bio = {
+        name: Cameron Shull,
+        age: 22,
+        profession: student at CSUMB,
+        passions: create art,
+        location: California,
+    };
+
+    return `Meet ${bio.name}, a ${bio.age}-year-old ${bio.profession} based in ${bio.location}. 
+    In their free time, they enjoy ${bio.hobbies.join(", ")}.`;
+ paragraph.style.textAlign = "center";  const container = document.getElementById('container');
   container.appendChild(paragraph)
    </script>
         <div class="content-wrapper">
